@@ -1,12 +1,14 @@
 # Piedra, papel y tijeras dojo! 
 
+![Screenshot](assets/screenshot.png)
+
 ## Descripcion 
 
-El clasico juego de piedra y tijeras creado en JavaScript, parte evaluativa del segmento de JavaScript en [Singulars](https://github.com/r2abreu/Singulars2020).
+El clásico juego de piedra y tijeras creado en JavaScript, parte evaluativa del segmento de JavaScript en [Singulars](https://github.com/r2abreu/Singulars2020).
 
 ## Instalacion
 
-No requiered. 
+No requiere.
 
 ## Instrucciones
 
