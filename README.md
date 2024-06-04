@@ -1,6 +1,9 @@
 # Rock, paper, scissors dojo!
 
+
 ![Screenshot](assets/screenshot.png)
+
+Access the game [here](https://rock-paper-scissors-r2abreu-12b5072fe459ce7985dcda766ea473d9de9.gitlab.io). 
 
 ## Requirements
 
