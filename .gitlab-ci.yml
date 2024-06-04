@@ -1,7 +1,7 @@
 stages:
   - build
 
-gitlab_pages:build:
+pages:
   stage: build
   script:
     - "mkdir public; ls --ignore=public | xargs -I {} mv {} public"
