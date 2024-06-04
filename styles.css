@@ -1,0 +1,251 @@
+@font-face {
+	font-family: 'Wonton';
+	src: url('./assets/WontonbyDaFontMafia.woff2') format('woff2'),
+		url('./assets/WontonbyDaFontMafia.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	max-width: 1000px;
+	margin: auto;
+	font-family: 'Wonton';
+	background: no-repeat url('./assets/dojo.svg') center center / 100%;
+}
+
+main > div {
+	display: flex;
+}
+
+figure img {
+	width: 100%;
+}
+
+.display figure {
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Wonton', cursive;
+	color: #b72f2c;
+	text-align: center;
+	font-size: 4rem;
+	margin-top: 0em;
+	filter: drop-shadow(1px 1px 3px #000);
+}
+
+.display {
+	display: flex;
+}
+
+.display figure {
+	width: 10em;
+}
+
+figcaption {
+	font-size: 1.2rem;
+}
+
+.picks {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 1em;
+}
+
+.picks figure {
+	width: 5em;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.picks figure:hover {
+	transform: translateY(-15px);
+	filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.699));
+}
+
+.display {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+[src*="rock"] {
+	transform: rotateX(180deg);
+}
+
+.scoreboard {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	height: min-content;
+	font-family: 'Wonton', cursive;
+	text-align: center;
+	color: #b72f2c;
+	font-size: 1.35em;
+	min-height: 265px;
+	order: 0;
+}
+
+.display figure:first-of-type {
+	order: 1;
+}
+
+.display figure:last-of-type {
+	order: 3;
+}
+
+.players {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.scoreboard span {
+	display: block;
+	color: #000;
+	font-size: 1.5em;
+	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.568));
+}
+
+.scoreboard p {
+	margin: 0;
+}
+
+button {
+	background: no-repeat url(./assets/button.svg) center center / 100%;
+	border: 0;
+	margin: auto;
+	display: block;
+	width: 40%;
+	padding: 1.1em;
+	font-family: 'Wonton';
+	font-size: 2em;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.2s ease-in;
+}
+
+button:hover {
+	transform: translateY(-20px);
+	filter: drop-shadow(1px 1px 5px #000);
+}
+
+output {
+	order: 2;
+	font-size: 4em;
+}
+
+.winner {
+	color: #60b645;
+	transition: all 0.2s ease-in 0.2s;
+	transform: rotate(360deg);
+}
+
+.loser {
+	animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) 0.1s;
+	transition: all 0.2s ease-in 0.2s;
+	color: #f00;
+}
+
+h2 {
+	display: none;
+}
+
+p {
+	text-align: center;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-8px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(8px, 0, 0);
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.scoreboard {
+		flex-direction: row;
+		order: 0;
+		min-height: 69px;
+		height: min-content;
+		width: 60%;
+		justify-content: space-around;
+		gap: 0.5em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		background: no-repeat url('./assets/dojo.svg') center center / cover;
+	}
+
+	.players figure {
+		min-width: 51px;
+	}
+
+	.display {
+		flex-direction: column;
+	}
+	.display figure {
+		margin: 2em;
+	}
+
+	.scoreboard {
+		flex-direction: row;
+		order: 0;
+		min-height: initial;
+		height: min-content;
+		gap: 0.5em;
+		margin-bottom: 0.9em;
+	}
+
+	main > div {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 3em;
+		padding-top: 1em;
+	}
+
+	output {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	button {
+		font-size: 1.2rem;
+		width: 70%;
+		padding: 2em;
+		margin-top: 0.5em;
+	}
+}
