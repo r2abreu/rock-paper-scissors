@@ -1,15 +1,15 @@
-# Piedra, papel y tijeras dojo! 
+# Rock, paper, scissors dojo!
 
 ![Screenshot](assets/screenshot.png)
 
-## Descripción 
+## Requirements
 
-El clásico juego de piedra y tijeras creado en JavaScript, parte evaluativa del segmento de JavaScript en [Singulars](https://github.com/r2abreu/Singulars2020).
+Web browser with JavaScript enabled.
 
-## Instalación
+## Description
 
-No requiere.
+The classic game now on JavaScript. Developed as part of the [Singulars](https://github.com/r2abreu/Singulars2020) bootcamp.
 
-## Instrucciones
+## Installation
 
-Elije una tirada y compite contra el CPU.
+Not required
