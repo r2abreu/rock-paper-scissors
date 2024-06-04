@@ -1,0 +1,9 @@
+stages:         
+  - build
+
+gitlab_pages:build:
+    stage: build
+    script: "mkdir public; ls --ignore=public | xargs -I {} mv {} public"
+    artifacts:
+        paths:
+          - "public"
